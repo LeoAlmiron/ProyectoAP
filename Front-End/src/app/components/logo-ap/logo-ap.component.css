@@ -1,0 +1,23 @@
+
+
+*{
+    
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: #030e12   ;
+    width: 100%;
+}
+
+.logos{
+    width: 60px;
+    
+}
+.btn-outline-light {
+    letter-spacing: 0.05em;
+  }
+
+.nav-link{color: gray!important;}
+.navbar-brand{color: white!important;}
+

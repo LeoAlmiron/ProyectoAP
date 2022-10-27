@@ -1,0 +1,23 @@
+
+<section class="header">
+    <div class="container">
+        <nav class="navbar navbar-expand-md navbar-light">
+        <a href="#" class="navbar-brand">
+            <img src="../../../assets/APLogo.png" alt="Aplogo" width="160" height="90"
+            class="d-inline-block aling-top"/>
+            #Yoprogramo
+        </a>
+        <ul class="navbar-nav ms-auto btn-lg">
+            <li><a href="#"><img class="logos"src="../../../assets/icons8-instagram-viejo-100.png"></a></li>
+            <li><a href="#"><img class="logos"src="../../../assets/icons8-linkedin-100.png"></a></li>
+            <li><a href="#"><img class="logos"src="../../../assets/icons8-facebook-nuevo-100.png"></a></li>
+            
+        </ul>
+        <button type="button" class="btn btn-outline-light btn-rounded btn-lg" (click)="login()"*ngIf="!isLogged" data-mdb-ripple-color="dark">Ingresar</button>
+        <button type="button" class="btn btn-outline-light btn-rounded btn-lg" (click)="onLogOut()"*ngIf="isLogged" data-mdb-ripple-color="dark">Cerrar Sesion</button>
+
+
+
+        </nav>
+    </div>
+</section>

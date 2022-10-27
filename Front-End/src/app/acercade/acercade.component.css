@@ -1,0 +1,62 @@
+.row{
+    --bs-gutter-x: 0rem;
+    padding: 20px;
+    border: 1px solid white;
+}
+
+
+
+
+
+@media(max-width:575px){
+    #fotoperfil{
+        position: absolute;
+        width: 15%;
+        border-radius: 100%;
+        box-shadow: 3px 3px 3px gray;
+    }
+}
+
+@media(max-width:575px){
+    #acer{
+        text-align: center;
+    }
+}
+
+@media(min-width:992px){
+
+    #fotoperfil{
+        position: absolute;
+        bottom: -54%;
+        
+    }
+    
+}
+
+
+@media(min-width:992px){
+
+    #NombreApellido{
+        text-align: left;
+        
+    }
+    
+}
+
+
+
+
+@media (min-width: 576px){
+   #fotoperfil{
+    position: absolute;
+    width: 12%;
+    border-radius: 100%;
+    box-shadow: 3px 3px 3px gray;
+    left: 3%;
+}
+}
+
+
+*{
+    background-color: #020111;
+}

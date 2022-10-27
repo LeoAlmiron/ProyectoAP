@@ -1,0 +1,23 @@
+.row{
+    --bs-gutter-x: 0rem;
+}
+
+h1{
+    text-align: center;
+}
+*{
+    background-color: #020111;
+}
+
+.content{
+    width: auto;
+}
+
+.s1, .s2{
+display: inline-block;
+text-align: justify;
+}
+
+.img-codoacodo{
+    box-shadow: rgba(253, 249, 252, 0.4) 5px 5px, rgba(233, 232, 232, 0.3) 10px 10px, rgba(189, 184, 187, 0.2) 15px 15px, rgba(163, 154, 160, 0.1) 20px 20px, rgba(236, 230, 230, 0.05) 25px 25px;
+}

@@ -1,0 +1,11 @@
+
+h1{
+    text-align: center;
+}
+.row{
+    --bs-gutter-x: 0rem;
+    
+}
+*{
+    background-color: #020111;
+}

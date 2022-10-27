@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+*{
+    background-color: #F9C642;
+    color: #020111;
+    
+}
+
+
+p {
+  margin: 0 0 13px 0;
+  font-size: 18px;
+}
+.row{
+    --bs-gutter-x: 0rem;
+}
+
+
+.center { text-align: center; }
+
+.container {
+  width: 95%;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.episode {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  position: relative;
+}
+
+.episode__number {
+  font-size: 10vw;
+  font-weight: 600;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  height: calc(10vw + 20px);
+  transition: all 0.2s ease-in;
+}
+
+.episode__content {
+  border-top: 2px solid rgb(2, 1, 17);
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 10px;
+  padding: 15px 0;
+}
+
+.episode__content .title {
+  font-weight: 600
+}
+
+.episode__content .story {
+  line-height: 26px;
+}
+
+@media (max-width: 600px) {
+  .episode__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .episode__content .story {
+    font-size: 15px;
+  }
+}
+
+.trabajo1{
+    font-size: 5vw;
+    font-weight: 200px;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    height: calc(10vw + 100px);
+    transition: all 0.2s ease-in;
+    background-image: url(../../../assets/Isakito.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.trabajo2 {
+    font-size: 5vw;
+    font-weight: 200px;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    height: calc(10vw + 100px);
+    transition: all 0.2s ease-in;
+    background-image: url(../../../assets/jumbo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
