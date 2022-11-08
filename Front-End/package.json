@@ -21,6 +21,7 @@
     "@popperjs/core": "^2.11.6",
     "boostrap": "^2.0.0",
     "bootstrap": "^5.2.1",
+    "bootstrap-icons": "^1.9.1",
     "jarallax": "^2.0.4",
     "jquery": "^3.6.1",
     "ng-circle-progress": "^1.6.0",
