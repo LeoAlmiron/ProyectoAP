@@ -19,6 +19,18 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { InterceptorProvider } from './service/interceptor-service';
+import { NewExperienciaComponent } from './components/experiencia-l/new-experiencia/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experiencia-l/edit-experiencia.component';
+import { NeweducacionComponent } from './components/educacion/neweducacion.component';
+import { EditeducacionComponent } from './components/educacion/editeducacion/editeducacion.component';
+import { HysComponent } from './components/hys/hys.component';
+import { NewSkillComponent } from './components/hardand-soft/new-skill.component';
+import { EditSkillComponent } from './components/hardand-soft/edit-skill.component';
+import { EditacercadeComponent } from './acercade/editacercade.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
+import {NgxTypedJsModule} from 'ngx-typed-js';
 
 
 @NgModule({
@@ -35,14 +47,25 @@ import { InterceptorProvider } from './service/interceptor-service';
     ProyectsComponent,
     FooterComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent,
+    NeweducacionComponent,
+    EditeducacionComponent,
+    HysComponent,
+    NewSkillComponent,
+    EditSkillComponent,
+    EditacercadeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
-    FormsModule ],
+    FormsModule,
+    NgxTypedJsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage()) ],
   providers: [
     InterceptorProvider
   ],

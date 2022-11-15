@@ -4,10 +4,15 @@
     border: 1px solid white;
 }
 
-
-
-
-
+.acercade{
+    text-align: center;
+}
+@media(min-width:575px){
+button{
+    left: 750px;
+    position: relative;
+}
+}
 @media(max-width:575px){
     #fotoperfil{
         position: absolute;
@@ -49,14 +54,12 @@
 @media (min-width: 576px){
    #fotoperfil{
     position: absolute;
-    width: 12%;
-    border-radius: 100%;
+    top: 126%;
+    width: 150px;
+    right: 87%;
     box-shadow: 3px 3px 3px gray;
-    left: 3%;
-}
+    
 }
 
-
-*{
-    background-color: #020111;
 }
+

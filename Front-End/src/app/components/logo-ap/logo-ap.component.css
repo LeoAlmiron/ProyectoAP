@@ -6,11 +6,11 @@
     box-sizing: border-box;
 }
 .header{
-    background-color: #030e12   ;
+      
     width: 100%;
 }
 
-.logos{
+.icon{
     width: 60px;
     
 }
@@ -21,3 +21,42 @@
 .nav-link{color: gray!important;}
 .navbar-brand{color: white!important;}
 
+.center{
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+
+.typing{
+    color: white;
+    
+    text-align: center;
+    align-items: center;
+
+}
+.typeo{
+    position: absolute;
+    
+    right: 460px;
+}
+
+.icon:hover {
+    transform: scale(1.3);
+    transition: all 0.3s linear;
+}
+#target:hover {
+    transform: scale(1.5);
+}   
+
+.instagram{
+    width: 60px;
+
+}
+.instagram:hover{
+    transform: scale(1.3);
+    transition: all 0.3s linear;
+    transform: all red linear;
+
+    
+}

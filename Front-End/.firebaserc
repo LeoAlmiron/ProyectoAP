@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "leandroalmironap"
+  },
+  "targets": {
+    "leandroalmironap": {
+      "hosting": {
+        "APP": [
+          "leandroalmironap"
+        ]
+      }
+    }
+  }
+}

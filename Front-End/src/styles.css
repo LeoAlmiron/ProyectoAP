@@ -1,13 +1,17 @@
 body{
     margin: 0%;
-}
+    --bs-gutter-x: 0rem;
+    background-color : linear-gradient(175deg,#110023,#775ab1);
+}   
+
+
 
 *{
-    font-family: Lumios-Marker
-}
 
-*{
-
-  
+    
+    background: rgb(2,1,15);
     color: white;
+}
+*{
+    --bs-gutter-x: 0rem;
 }
