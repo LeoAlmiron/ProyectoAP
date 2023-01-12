@@ -1,16 +1,17 @@
-<div class="container" *ngIf="expLab">
+<div class="container1" *ngIf="expLab">
+    <a href="http://localhost:4200/" target="_blank"> <img src="../../../../assets/APLogo.png"  width="160" height="95" alt=""></a>
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombreE">Name</label>
-                    <input type="text" class="form-control" name="nombreE" id="nombreE" [(ngModel)]="expLab.nombreE" required>
+                    <label for="nombreE">Editar nombre de la experiencia laboral</label>
+                    <input type="text" class="form-control feedback-input" placeholder="Editar experiencia" name="nombreE" id="nombreE" [(ngModel)]="expLab.nombreE" required>
                 </div>
                 <div class="form-group">
-                    <label for="descripcionE">Descripcion</label>
-                    <input type="text" class="form-control" name="descripcionE" id="descripcionE" [(ngModel)]="expLab.descripcionE" required>
+                    <label for="descripcionE">Editar descripción</label>
+                    <input type="text" class="form-control feedback-input textarea"  placeholder="Editar descripción" name="descripcionE" id="descripcionE" [(ngModel)]="expLab.descripcionE" required>
                 </div>
-                <button class="btn btn-success">
+                <button class="submit btn btn-outline-warning">
                     Actualizar Experiencia
                 </button>
             </form>

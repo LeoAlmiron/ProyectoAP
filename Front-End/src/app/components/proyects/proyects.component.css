@@ -5,13 +5,52 @@
 h1{
     text-align: center;
 }
+p{
+    font-size: 23px;
+}
 *{
     background-color: #020111;
 }
 
+
+
+  a:before {
+    content: '';
+    background: #FFCA2C;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+  }
+  a:hover {
+    background-position: 0;
+   }
+   a:hover::before {
+    width: 100%;
+  }
+
+  a {
+    background-image: linear-gradient(
+      to right,
+      #FFCA2C,
+      #FFCA2C 50%,
+      white 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    font-size: 25px
+  }
+
 .content{
     width: auto;
 }
+
+
 
 .s1, .s2{
 display: inline-block;
@@ -19,5 +58,4 @@ text-align: justify;
 }
 
 .img-codoacodo{
-    box-shadow: rgba(253, 249, 252, 0.4) 5px 5px, rgba(233, 232, 232, 0.3) 10px 10px, rgba(189, 184, 187, 0.2) 15px 15px, rgba(163, 154, 160, 0.1) 20px 20px, rgba(236, 230, 230, 0.05) 25px 25px;
-}
+    box-shadow: rgba(255, 255, 255, 0.664) 0px 2px 4px, #FFCA2C 0px 7px 13px -3px, rgba(22, 3, 3, 0.836) 0px -3px 0px inset;}

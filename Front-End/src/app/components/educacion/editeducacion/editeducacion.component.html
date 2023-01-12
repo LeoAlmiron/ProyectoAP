@@ -1,17 +1,18 @@
-<div class="container" *Ngif = "educacion">
+<div class="container1" *ngIf="educacion">
+    <a href="http://localhost:4200/" target="_blank"> <img src="../../../../assets/APLogo.png"  width="160" height="95" alt=""></a>
     <div class="row">
         <div>
             <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombreE">Nombre de Institucion/Colegio</label>
-                    <input type="text" class="form-control" name="nombreE" id="nombreE" [(ngModel)]="educacion.nombreE" required>
+                    <label for="nombreE">Nombre de la institución</label>
+                    <input type="text" class="form-control feedback-input" id="nombreE" placeholder="Editar institución" name="nombreE" [(ngModel)]="educacion.nombreE" required>
                 </div>
                 <div class="form-group">
-                    <label for="descripcionE">Descripcion de Titulo/Estudio</label>
-                    <input type="text" class="form-control" name="descripcionE" id="descripcionE" [(ngModel)]="educacion.descripcionE" required>
+                    <label for="descripcionE">Descripción de sus estudios</label>
+                    <input type="text" class="form-control feedback-input textarea" placeholder="Editar descripción" id="descripcionE" name="descripcionE" [(ngModel)]="educacion.descripcionE" required>
                 </div>
-                <button class="btn btn-success">
-                    Agregar Educacion
+                <button class="btn btn-outline-warning">
+                    Actualizar educación
                 </button>
             </form>
         </div>

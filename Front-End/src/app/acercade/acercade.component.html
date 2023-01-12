@@ -1,16 +1,32 @@
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/svg-with-js.min.css" rel="stylesheet" />
+
+
+<a href="#acer"></a>
 <div class="row" *ngIf="persona">
 
  <div>
- <button type="button" class="btn btn-outline-light" routerLink="/editacercade/1" *ngIf="isLogged">
+ <button type="button" class="btn btn-warning bt" routerLink="/editacercade/1" *ngIf="isLogged">
     Editar Persona
 </button>
+
+
+
 </div>
-    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-        <img src={{persona.img}} id="fotoperfil"  class="img-fluid" alt="img">
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 profilepic">
+        <img src={{persona.img}} id=""  class="img-fluid profilepic" alt="Foto Perfi">
+        <div class="profilepic__content" routerLink="/editacercade/1" *ngIf="isLogged">
+            <span class="profilepic__icon"><i class="fas fa-camera"></i></span>
+            <span class="profilepic__text">Editar Foto</span>
+          </div>
     </div>
 
+   
+      
     <div id="acer" class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
-
+        <br>
+        
 
         <p Id="NombreApellido">{{persona.nombre}} {{persona.apellido}}</p>
         <p id="Titulo">Full Stack Developer JR</p>

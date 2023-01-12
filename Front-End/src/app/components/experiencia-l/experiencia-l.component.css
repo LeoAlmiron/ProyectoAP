@@ -1,9 +1,42 @@
-*{
-    color: black;
-    --bs-gutter-x: 0rem;
+* {
 
+  --bs-gutter-x: 0rem;
+  background-color: #020111;
 }
 
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
+}
+
+
+
+th {
+  border: 1px solid rgb(223, 219, 219);
+  padding: 4px 6px;
+}
+
+#nm {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 4px 6px;
+}
+
+#des {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 4px 6px;
+}
+
+th {}
+
+
+i {
+  background-image: linear-gradient(to right,
+      #FFCA2C,
+      #FFCA2C 50%,
+      white 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px
 }

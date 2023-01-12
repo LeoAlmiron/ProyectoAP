@@ -1,9 +1,12 @@
-
+button{
+   margin-left: 8.6px;
+}
 
 *{
     
     padding: 0;
     box-sizing: border-box;
+    background-color: #020111;
 }
 .header{
       
@@ -42,21 +45,43 @@
 }
 
 .icon:hover {
-    transform: scale(1.3);
+    transform: scale(1.2);
     transition: all 0.3s linear;
 }
-#target:hover {
-    transform: scale(1.5);
-}   
+
 
 .instagram{
     width: 60px;
 
 }
 .instagram:hover{
-    transform: scale(1.3);
+    transform: scale(1.2);
     transition: all 0.3s linear;
-    transform: all red linear;
+}
 
+
+
+
+
+@media screen and (max-width:990px){
+    .typeo{
+        visibility:hidden;
+    }
+}
+
+@media screen and (max-width:990px){
+    .navbar-nav{
+        position:relative ;
+        margin-right: 25%;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:990px){
     
+    .btn-outline-light{
+        position: absolute;
+        margin-bottom: -25%;
+           letter-spacing: none;
+    }
 }

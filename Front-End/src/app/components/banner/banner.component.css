@@ -1,0 +1,16 @@
+.parallax {
+
+    background-image: url("../../../assets/vectorpaint.svg");
+    min-height: 682px;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 92% 100%;
+}
+
+*{
+    background-color: #020111;
+}
+
+
+

@@ -6,10 +6,13 @@
 
 .acercade{
     text-align: center;
+    font-size: 24px;
+
+    
 }
 @media(min-width:575px){
 button{
-    left: 750px;
+    left: 250px;
     position: relative;
 }
 }
@@ -22,11 +25,7 @@ button{
     }
 }
 
-@media(max-width:575px){
-    #acer{
-        text-align: center;
-    }
-}
+
 
 @media(min-width:992px){
 
@@ -42,7 +41,7 @@ button{
 @media(min-width:992px){
 
     #NombreApellido{
-        text-align: left;
+        text-align: center;
         
     }
     
@@ -54,12 +53,110 @@ button{
 @media (min-width: 576px){
    #fotoperfil{
     position: absolute;
-    top: 126%;
-    width: 150px;
+    top: 100%;
+    width: 180px;
     right: 87%;
     box-shadow: 3px 3px 3px gray;
     
 }
-
+.row{
+    background-color: #020111;
+}
 }
 
+#NombreApellido{
+    font-size: 24px;
+}
+
+#Titulo{
+    font-size: 23px;
+    text-align: center;
+}
+
+
+.row{
+     
+      
+        box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
+          0 5px 15px 0 rgba(0,0,0,0.08);
+        
+       
+        
+        border-left: 0 solid #FFCA2C;
+        transition: border-left 300ms ease-in-out, padding-left 300ms ease-in-out;
+      }
+      
+      .row:hover {
+        padding-left: 0.5rem;
+        border-left: 0.5rem solid #FFCA2C;
+      }
+      
+      .row > :first-child {
+        margin-top: 0;
+      }
+      
+      .row > :last-child {
+        margin-bottom: 0;
+      }
+
+      .profilepic {
+        position: relative;
+        width: 172px;
+        height: 170px;
+        border-radius: 45%;
+        overflow: hidden;
+        background-color: #111;
+        margin-top: -2%;
+        
+      }
+      
+      .profilepic:hover .profilepic__content {
+        opacity: 1;
+      }
+      
+      .profilepic:hover .profilepic__image {
+        opacity: .5;
+      }
+      
+      .profilepic__image {
+        object-fit: cover;
+        opacity: 3;
+        transition: opacity .2s ease-in-out;
+      }
+      
+      .profilepic__content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        opacity: 0;
+        transition: opacity .2s ease-in-out;
+      }
+      
+      .profilepic__icon {
+        color: rgb(255, 255, 255);
+        padding-bottom: 8px;
+      }
+      
+      .fas {
+        font-size: 20px;
+      }
+      
+      .profilepic__text {
+        text-transform: uppercase;
+        font-size: 12px;
+        width: 50%;
+        text-align: center;
+      }
+
+      .bt{
+        margin-left: -3%;
+      }
+
+      

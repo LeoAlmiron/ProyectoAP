@@ -1,38 +1,38 @@
-
 <section class="header">
     <div class="container">
         <nav class="navbar navbar-expand-md navbar-light">
-        <a href="#" class="navbar-brand">
-            <img src="../../../assets/APLogo.png" alt="Aplogo" width="160" height="95"
-            class="d-inline-block aling-top"/>
-            #Yoprogramo 👨‍💻
-        </a>
-        <ul class="navbar-nav ms-auto btn-lg">
-            <li><a href="#"><img class="instagram"src="../../../assets/icons8-instagram-100.png"></a></li>
-            <li class="i"><a href="https://www.linkedin.com/in/leandro-almiron-082b161a3/" target="_blank"><img class="icon"src="../../../assets/icons8-linkedin.svg"></a></li>
-            <li><a href="#"><img class="icon"src="../../../assets/icons8-facebook.svg"></a></li>
-            
-        </ul>
+            <a href="#" class="navbar-brand">
+                <img src="../../../assets/APLogo.png" alt="Aplogo" width="160" height="95"
+                    class="d-inline-block aling-top" />
+                #Yoprogramo 👨‍💻
+            </a>
+            <ul class="navbar-nav ms-auto btn-lg">
+                <li><a href="https://www.instagram.com/martinlean99/" target="_blank"><img class="instagram"
+                            src="../../../assets/icons8-instagram-100.png"></a></li>
+                <li class="i"><a href="https://www.linkedin.com/in/leandro-almiron-082b161a3/" target="_blank"><img
+                            class="icon" src="../../../assets/icons8-linkedin.svg"></a></li>
+                <li><a href="https://www.facebook.com/leo.almiron.129/" target="_blank"><img class="icon"
+                            src="../../../assets/icons8-facebook.svg"></a></li>
 
-        <button type="button" class="btn btn-outline-light btn-rounded btn-lg" (click)="login()"*ngIf="!isLogged" data-mdb-ripple-color="dark">Ingresar</button>
-        <button type="button" class="btn btn-outline-light btn-rounded btn-lg" (click)="onLogOut()"*ngIf="isLogged" data-mdb-ripple-color="dark">Cerrar Sesion</button>
-        <div class="typeo" *ngIf="!isLogged">
-            <ngx-typed-js  [strings]="['Bienvenido Usuario! 👋']" [typeSpeed]="45" [showCursor]="false">
-                <h1 class="typing"></h1>
-              </ngx-typed-js>
+            </ul>
 
-              <ngx-typed-js *ngIf="isLogged" [strings]="['Bienvenido Admin! 👋']" [typeSpeed]="45" [showCursor]="false">
-                <h1 class="typing"></h1>
-              </ngx-typed-js>
-            </div>    
-    </nav>
-      
-       
+
+            <button type="button" class="btn btn-outline-light btn-rounded btn-lg" (click)="login()" *ngIf="!isLogged"
+                data-mdb-ripple-color="dark">Ingresar</button>
+            <button type="button" class="btn btn-outline-light btn-rounded btn-lg" (click)="onLogOut()" *ngIf="isLogged"
+                data-mdb-ripple-color="dark">Cerrar Sesion</button>
+            <div class="typeo" *ngIf="!isLogged">
+                <ngx-typed-js [strings]="['Bienvenido Usuario! 👋']" [typeSpeed]="45" [showCursor]="false">
+                    <h1 class="typing"></h1>
+                </ngx-typed-js>
+
+
+            </div>
+            <div class="typeo" *ngIf="isLogged">
+                <ngx-typed-js [strings]="['Bienvenido Admin! 👋']" [typeSpeed]="45" [showCursor]="false">
+                    <h1 class="typing"></h1>
+                </ngx-typed-js>
+            </div>
+        </nav>
     </div>
-
-  
-
 </section>
-
-
-  

@@ -1,0 +1,29 @@
+.carousel-nav-icon {
+    height:5px;
+    width: 2px;
+ }
+h1{
+    color: #171717;
+}
+ 
+ 
+ .col, .col-sm, .col-md {
+    margin: 3px;
+    height: 100px;
+    background-size: cover;
+    background-position: center center;
+ }
+ 
+#c{
+    text-align: center;
+    color: #ececec;
+}
+
+.row{
+    --bs-gutter-x: 0rem;
+    background-color: #020111;
+}
+
+#br{
+    background-color: #020111;
+}

@@ -1,15 +1,19 @@
 .row{
    --bs-gutter-x: 0rem;
-   background-color:linear-gradient(175deg,#110023,#775ab1);
+  
 }
 
 #Footer{
 display: flex;
 
-font-size: 15px;
+font-size: 17px;
 
 flex-direction: column;
 text-align: center;
 
   
+}
+
+*{
+   background-color: #020111;
 }

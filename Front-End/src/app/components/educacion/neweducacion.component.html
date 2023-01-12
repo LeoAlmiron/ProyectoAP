@@ -1,16 +1,17 @@
-<div class="container">
+<div class="container1">
+    <a href="http://localhost:4200/" target="_blank"> <img src="../../../../assets/APLogo.png"  width="160" height="95" alt=""></a>
     <div class="row">
         <div>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group">
                     <label for="nombreE">Nombre de Institucion/Colegio</label>
-                    <input type="text" class="form-control" name="nombreE" id="nombreE" [(ngModel)]="nombreE" required>
+                    <input type="text" class="form-control feedback-input" placeholder="Agregar Institucion" name="nombreE" id="nombreE" [(ngModel)]="nombreE" required>
                 </div>
                 <div class="form-group">
                     <label for="descripcionE">Descripcion de Titulo/Estudio</label>
-                    <input type="text" class="form-control" name="descripcionE" id="descripcionE" [(ngModel)]="descripcionE" required>
+                    <input type="text" class="form-control feedback-input textarea" placeholder="Agregar descripción" name="descripcionE" id="descripcionE" [(ngModel)]="descripcionE" required>
                 </div>
-                <button class="btn btn-success">
+                <button class="btn btn-outline-warning">
                     Agregar Educacion
                 </button>
             </form>

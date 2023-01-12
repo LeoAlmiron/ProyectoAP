@@ -31,6 +31,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 import {NgxTypedJsModule} from 'ngx-typed-js';
+import { CertificadosComponent } from './components/certificados/certificados.component';
 
 
 @NgModule({
@@ -55,7 +56,8 @@ import {NgxTypedJsModule} from 'ngx-typed-js';
     HysComponent,
     NewSkillComponent,
     EditSkillComponent,
-    EditacercadeComponent
+    EditacercadeComponent,
+    CertificadosComponent
   ],
   imports: [
     BrowserModule,
